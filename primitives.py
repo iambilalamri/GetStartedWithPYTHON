@@ -1,11 +1,28 @@
 ### PRIMTIVE TYPES ###
+# Pritive type in Python: strings, numbers(int, float, complex number), booleans
 import math
 
 ##############################################
-
+# CONVERSION
 x = input("x: ")
-y = x + "pro"
-print(y)
+print(type(x))  # <class 'str'>
+y = int(x) + 1
+print(f"x: {x}, y: {y}")
+print(type(y))  # <class 'int'>
+
+# int(x)
+# float(x)
+# bool(x)
+# str(x)
+
+# Equivalent of False = "", 0, None
+print(bool(0))  # False
+print(bool(1))  # True
+print(bool(""))  # False
+print(bool("False"))  # True
+print(bool(None))  # False
+print(bool(-1))  # True
+print(bool(5))  # True
 
 ##############################################
 # NUMBERS
@@ -81,7 +98,7 @@ course_name = "Python Programming"
 # \n saut de ligne
 # \ show special chars
 course_label = "Python \"Language"
-
+fruit = "Apple"
 # print(course_label)
 # print(students_count)
 # print(len(course_name))
@@ -92,4 +109,4 @@ course_label = "Python \"Language"
 # print(course_name[0:])  # Python Programming
 # print(course_name[:3])  # Pyt
 # print(course_name[:])  # Python Programming
-# print()
+# print(fruit[1:-1]) # ppl
